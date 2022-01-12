@@ -5,11 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="images/canvas.png">
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">[insert survey description here]</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <section class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input id="name" type="text" placeholder="Enter Your Name" required><br>
+                <label for="email" id="email-label">Email</label>
+                <input id="email" type="email" placeholder="Enter Your Email" required><br>
+                <label for="number" id="number-label">Age</label>
+                <input id="number" type="number" min="0" max="199" placeholder="Enter Your Age"><br>
+                <label for="dropdown">[Dropdown]</label>
+                <select id="dropdown">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select><br>
+            </section>
+            <section class="form-group">
+                <h2>[insert multiple choice question here]</h2>
+                <label for="A">
+                    <input id="A" type="radio" name="a-b-c" value="A">A
+                </label>
+                <label for="B">
+                    <input id="B" type="radio" name="a-b-c" value="B">B
+                </label>
+                <label for="C">
+                    <input id="C" type="radio" name="a-b-c" value="C">C
+                </label>
+            </sectipn>
+            <section class="form-group">
+                <h2>[insert checkbox question here]</h2>
+                <label for="d">
+                    <input id="d" type="checkbox" name="d-e-f" value="d">D
+                </label>
+                <label for="e">
+                    <input id="e" type="checkbox" name="d-e-f" value="e">E
+                </label>
+                <label for="f">
+                    <input id="f" type="checkbox" name="d-e-f" value="f">F
+                </label>
+            </section>
+            <section class="form-group">
+                <textarea></textarea>
+                <button id="submit" type="submit">Submit</button>
+            </section>
+        </form>
+    </main>
 </body>
 </html>
