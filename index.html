@@ -17,34 +17,35 @@
             <p id="description">Help up understand your listening habits better</p>
         </header>
         <form id="survey-form">
-            <div class="form-group">
+            <div class="form-group form-introduction">
                 <label for="name" id="name-label">Name</label>
                 <input id="name" class="text-input" type="text" placeholder="Enter Your Name" required><br>
                 <label for="email" id="email-label">Email</label>
                 <input id="email" class="text-input" type="email" placeholder="Enter Your Email" required><br>
                 <label for="number" id="number-label">Age</label>
                 <input id="number" class="text-input" type="number" min="0" max="199" placeholder="Enter Your Age"><br>
-                <label for="dropdown">[Dropdown]</label>
-                <select id="dropdown">
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
+                <label for="dropdown">Gender</label>
+                <select id="dropdown" class="text-input">
+                    <option disabled selected value> -- select an option -- </option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="no-response">Prefer Not To Respond</option>
                 </select><br>
             </div>
             <div class="form-group">
-                <h2>How often do you listen to music?</h2>
-                <label for="A">
-                    <input id="A" type="radio" name="a-b-c" value="A">A
+                <p>How often do you listen to music?</p>
+                <label for="Monthly">
+                    <input id="Monthly" type="radio" name="a-b-c" value="Monthly">Monthly
                 </label>
-                <label for="B">
-                    <input id="B" type="radio" name="a-b-c" value="B">B
+                <label for="weekly">
+                    <input id="weekly" type="radio" name="a-b-c" value="weekly">Weekly
                 </label>
-                <label for="C">
-                    <input id="C" type="radio" name="a-b-c" value="C">C
+                <label for="daily">
+                    <input id="daily" type="radio" name="a-b-c" value="daily">Daily
                 </label>
             </div>
             <div class="form-group">
-                <h2>What genres of music do you listen to?</h2>
+                <p>What genres of music do you listen to?</p>
                 <label for="pop">
                     <input id="pop" type="checkbox" name="genre" value="pop">Pop
                 </label>
@@ -89,8 +90,8 @@
                 </label>
             </div>
             <div class="form-group">
-                <h2>Feedback</h2>
-                <textarea placeholder="Enter feedback here..."></textarea>
+                <p>Feedback</p>
+                <textarea placeholder="Enter additional feedback here..."></textarea>
                 <button id="submit" type="submit">Submit</button>
             </div>
         </form>
