@@ -1,6 +1,7 @@
 :root {
     --clr-green: #1ed760;
     --clr-white: white;
+    --clr-black: rgba(25, 20, 20, 0.7);
 }
 
 @font-face {
@@ -47,7 +48,7 @@ form {
     padding: 2.5em;
     padding-bottom: 1.5em;
     border-radius: 15px;
-    background-color: rgba(25, 20, 20, 0.7);
+    background-color: var(--clr-black);
 }
 
 form h2 {
@@ -91,4 +92,8 @@ textarea {
     border: none;
     color: var(--clr-white);
     margin-top: 10px;
+}
+
+#submit:hover {
+    background-color: #16a147;
 }
