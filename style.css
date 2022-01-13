@@ -81,6 +81,7 @@ form {
 textarea {
     height: 200px;
     border-radius: 5px;
+    padding:10px;
 }
 
 .text-input, textarea {
